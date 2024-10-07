@@ -20,7 +20,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('flight_booking.urls')),  # Flight booking API
-    path('auth/', include('djoser.urls')),  # Djoser authentication URLs
-    path('auth/', include('djoser.urls.authtoken')),  # Token management URLs
+    path('api/', include('flight_booking.urls')),  
+    path('auth/', include('djoser.urls')),  
+    path('auth/', include('djoser.urls.authtoken')),  
 ]
